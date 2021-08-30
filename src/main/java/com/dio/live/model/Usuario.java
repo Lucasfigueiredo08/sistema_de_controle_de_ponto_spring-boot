@@ -1,6 +1,7 @@
 package com.dio.live.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode
 @Builder // teste em software e quer transferir objetos
 @Entity // entidade do banco, transforma classe em tabela
+@Audited
 public class Usuario {
     @Id
     private Long id;
